@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="edge"/>
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="com.tests.HomeTest">
+        <methods>
+          <include name="Verify_Items_Name_Order_Acending"/>
+          <include name="Verify_Items_Price_Sort_High_To_Low"/>
+          <include name="Verify_cart_Icon_Present_or_Not"/>
+          <include name="Veryfy_SideMenu_open"/>
+          <include name="Verify_Items_Price_Sort_Low_To_High"/>
+          <include name="Verify_Products_Title"/>
+          <include name="Verify_Sort_Option"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="Veryfy_SideMenu_close"/>
+          <include name="Verify_Items_Name_Order_Decending"/>
+          <include name="Verify_Inventory_Items_Container"/>
+        </methods>
+      </class> <!-- com.tests.HomeTest -->
+      <class name="com.tests.LoginTest">
+        <methods>
+          <include name="Press_login_Button_With_Invalid_UserName_Invalid_Password_Alert"/>
+          <include name="Login_With_ValidUserName_And_Invalid_Password"/>
+          <include name="PasswordField_Displaying"/>
+          <include name="UsernameField_Displaying"/>
+          <include name="login_With_Valid_Credentials"/>
+          <include name="afterMethod"/>
+          <include name="Press_login_Button_Without_Enter_Credentials_Alert"/>
+          <include name="Press_login_Button_Without_UserName_With_Password_Alert"/>
+          <include name="login_With_Excel_Credentials"/>
+          <include name="Login_With_Invalid_UserName_And_Valid_Password"/>
+          <include name="Press_login_Button_With_UserName_Without_Password_Alert"/>
+          <include name="Verify_LogOut_Button"/>
+          <include name="login_With_Invalid_Credentials"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tests.LoginTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
